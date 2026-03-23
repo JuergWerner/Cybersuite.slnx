@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/providers/" />
+  <Folder Name="/src/">
+    <Project Path="src/Cybersuite.Abstractions/Cybersuite.Abstractions.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Cybersuite.Tests.Unit/Cybersuite.Tests.Unit.csproj" />
+    <Project Path="tests/Cybersuite.Test.Property/Cybersuite.Test.Property.csproj" />
+    <Project Path="tests/Cybersuite.Tests.Compliance/Cybersuite.Tests.Compliance.csproj" />
+    <Project Path="tests/Cybersuite.Tests.Integration/Cybersuite.Tests.Integration.csproj" />
+  </Folder>
+
+  <Project Path="providers/Cybersuite.Provider.BouncyCastle/Cybersuite.Provider.BouncyCastle.csproj" />
+  <Project Path="providers/Cybersuite.Provider.BouncyCastle.Worker/Cybersuite.Provider.BouncyCastle.Worker.csproj" />
+  <Project Path="src/Cybersuite.Compliance/Cybersuite.Compliance.csproj" />
+  <Project Path="src/Cybersuite.OopProtocol/Cybersuite.OopProtocol.csproj" />
+  <Project Path="src/Cybersuite.Policy/Cybersuite.Policy.csproj" />
+  <Project Path="src/Cybersuite.ProviderHost/Cybersuite.ProviderHost.csproj" />
+  <Project Path="src/Cybersuite.ProviderModel/Cybersuite.ProviderModel.csproj" />
+  <Project Path="src/Cybersuite.Runtime/Cybersuite.Runtime.csproj" />
+  <Project Path="src/Cybersuite.Selection/Cybersuite.Selection.csproj" />
+</Solution>

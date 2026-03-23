@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Cybersuite.Tests.Unit" />
+    <InternalsVisibleTo Include="Cybersuite.Tests.Integration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cybersuite.Abstractions\Cybersuite.Abstractions.csproj" />
+    <ProjectReference Include="..\Cybersuite.ProviderModel\Cybersuite.ProviderModel.csproj" />
+    <ProjectReference Include="..\Cybersuite.OopProtocol\Cybersuite.OopProtocol.csproj" />
+    <ProjectReference Include="..\Cybersuite.Compliance\Cybersuite.Compliance.csproj" />
+  </ItemGroup>
+</Project>

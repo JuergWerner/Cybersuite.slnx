@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "sequence": 1,
+  "tenantId": "Development",
+  "securityMode": "Pqc",
+  "fipsRequired": false,
+  "minimumStrengthByCategory": {
+    "KeyEncapsulation": 192,
+    "Signature": 192,
+    "SymmetricAead": 256,
+    "KeyDerivation": 192
+  },
+  "providerAllowlist": [
+    "BouncyCastle"
+  ],
+  "pinnedProviderByCategory": {},
+  "pinnedProviderByAlgorithm": {
+    "ML-KEM-768": "BouncyCastle",
+    "ML-DSA-65": "BouncyCastle"
+  },
+  "signature": null
+}

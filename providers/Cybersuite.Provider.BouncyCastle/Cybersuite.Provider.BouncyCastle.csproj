@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Cybersuite.Tests.Unit" />
+    <InternalsVisibleTo Include="Cybersuite.Tests.Integration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.7.0-beta.98" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cybersuite.Abstractions\Cybersuite.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Cybersuite.ProviderModel\Cybersuite.ProviderModel.csproj" />
+    <ProjectReference Include="..\..\src\Cybersuite.OopProtocol\Cybersuite.OopProtocol.csproj" />
+    <ProjectReference Include="..\..\src\Cybersuite.ProviderHost\Cybersuite.ProviderHost.csproj" />
+  </ItemGroup>
+</Project>
